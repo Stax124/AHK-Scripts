@@ -14,23 +14,18 @@
 #UseHook
 CoordMode, Mouse, Screen
 
+Q::
+    CoordMode, Mouse, Screen
+    click
+    sleep 300
+    Click, Left, 1154, 722
+    Sleep, 20
+    Click, Left, 814, 722
+    sleep, 20
+    Click, Left, 850, 771
 
-!q::
- CoordMode, Mouse, Screen
- click
- sleep 300
- Send, 999
- Click, Left, 0, 0
- Send, {Right}
- Sleep, 500
- Send, {Right}
- sleep, 100
- Click
- Sleep, 100
- Send, {Enter}
- 
 return
 
 !w::
- ExitApp ;Binds control and exxx to stop the script
+ExitApp ;Binds control and exxx to stop the script
 return
